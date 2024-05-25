@@ -1,0 +1,16 @@
+Please help me confirm the category of {{$input}}. The categories include weather, courses, and generative expressions. If it is not clear, please answer that it cannot be confirmed. The classification reference is as follows:
+
+Q: Will it rain?  Category:Weather
+Q: What is the temperature today?  Category:Weather
+Q: How much is moderate?  Category:Weather
+Q: What is a new energy vehicle?  Category: Courses
+Q: Characteristics of electric vehicles Category: Courses
+Q: What is the concept?  Category: Courses
+Q: What is the content related to the course?  Category: Courses
+Question: Write a poem?  Category: Generative
+Q: Translate it Category: Generative
+Q: Calculation results Category: Generative expressions
+
+If the category can be confirmed, please output only 1 for weather related, please output only 2 for course related, please only output 3 for generative related, and cannot confirm the related, please only output 0, and refer to {{$input}} and its category as follows. json format output
+
+{""question"":""{{$input}}"",""label"":""{{$label}}""}

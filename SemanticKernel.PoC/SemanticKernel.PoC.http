@@ -1,0 +1,12 @@
+@SemanticKernel.PoC_HostAddress = http://localhost:5235
+
+POST {{SemanticKernel.PoC_HostAddress}}/ask/
+Content-Type: application/json
+Accept: text/plain
+Accept-Encoding: UTF-32
+
+{
+  "message": "Write email about  travellings tips based on  getting current weather in Guangzhou and translate it to polish"
+}
+
+###
